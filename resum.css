@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 300px 700px; 
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.left-content{
+    padding: 1rem;
+}
+
+.left-section{
+    background-color: rgb(178, 190, 181);
+    grid-column:span 1;
+}
+
+.right-section{
+    background-color: rgb(231, 206, 172);
+    grid-column: span 1/span 2;
+}
+
+.profile-image{
+    padding: 1px;
+    display: block;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name{
+    font-size:1.2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.8rem;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.contact-item{
+  text-align: center;
+}
+/* 
+ul#horizontal-list li{
+    margin: 19px;
+    display: inline;
+}  */
+
+#horizontal-list li{
+    display: inline;
+    margin: 20px;
+}
+
+.personal-details{
+    margin-top: 10px;
+    height: 100px;
+}
+
+#vertical-list li{
+    margin: 10px;
+    font-style: italic;
+}
+
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    /* padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; */
+}
+
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+}
+
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.edu-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 45px ;
+    grid-row-gap: 20px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.exp-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 45px;
+    grid-row-gap: 20px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.proj-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 45px;
+    grid-row-gap: 20px;
+    padding-left: 8px;
+    margin-top: 8px;
+}
+
+.para-info{
+    padding-left: 8px;
+}
+
+.about-section{
+    margin-bottom: 25px;
+}
+
+.education-section{
+    margin-bottom: 25px;
+}
+
+.experience-section{
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content {
+        display :grid;
+        min-height: 1000px;
+        width: 90%;
+        margin: 20px auto;
+        grid-template-columns: repeat(1, 1fr); 
+        }
+  }
